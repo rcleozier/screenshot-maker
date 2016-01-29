@@ -39,23 +39,18 @@
    <div class="column">
     	<h4> Android </h4>
     	<ul>
-		  <li>768 x 1024 (Portrait) </li>
-		  <li>1024 x 768 (Landscape)</li>
-		  <li>1536 x 2048 (Portrait) </li>
-		  <li>2048 x 1536 (Landscape)</li>
 		</ul>
     </div>
        <div class="column">
     	<h4> Kindle </h4>
     	<ul>
-		  <li>768 x 1024 (Portrait) </li>
-		  <li>1024 x 768 (Landscape)</li>
-		  <li>1536 x 2048 (Portrait) </li>
-		  <li>2048 x 1536 (Landscape)</li>
+		  <li>800 x 480  </li>
+		  <li>1280 x 800 </li>
+		  <li>1920 x 1200  </li>
+		  <li>2560 x 600 </li>
 		</ul>
     </div>
   </div>
-
  <div class="row">
  	<div class="column column-75 column-offset-25">  
 	<form action="submit.php" method="POST" enctype="multipart/form-data">
@@ -64,6 +59,5 @@
 	</form>
 	</div>
 </div>
-
 </body>
 </html>

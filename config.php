@@ -1,3 +1,3 @@
 <?php
-	define("BASE_URL", "http://localhost/images");
+	define("BASE_URL", "http://appscreenshotsize.com/");
 ?>
