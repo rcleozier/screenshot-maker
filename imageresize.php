@@ -76,15 +76,15 @@ class ImageResize
 
         switch ($this->source_type) {
             case IMAGETYPE_GIF:
-                $this->source_image = imagecreatefromgif($filename);
+                $this->source_image = \imagecreatefromgif($filename);
                 break;
 
             case IMAGETYPE_JPEG:
-                $this->source_image = imagecreatefromjpeg($filename);
+                $this->source_image = \imagecreatefromjpeg($filename);
                 break;
 
             case IMAGETYPE_PNG:
-                $this->source_image = imagecreatefrompng($filename);
+                $this->source_image = \imagecreatefrompng($filename);
                 break;
 
             default:
