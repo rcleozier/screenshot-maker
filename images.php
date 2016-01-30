@@ -25,7 +25,6 @@
 			'kindle_portrait_3' 		  =>  [2560, 1600, 'kindle'],
 		];
 
-		private $resizer;
 		private $rootDir;
 
 		public function crop($images)
@@ -44,12 +43,16 @@
 			$this->zipDirectory($this->rootDir);
 			$this->cleanUp($this->rootDir);
 
+
 			return $this->rootDir;
 		}
 
 		private function makeRootDirectory()
 		{
-			$this->rootDir = $this->generateRandomString(25);
+			$rootDir = $this->generateRandomString(25);
+
+			$this->rootDir = getcwd() . "/downloads/" . $rootDir;
+
 			mkdir($this->rootDir);
 		}
 
@@ -58,6 +61,9 @@
 			if (!is_dir("{$this->rootDir}/{$dir}")) {
 				mkdir("{$this->rootDir}/{$dir}");
 			}
+
+			$image = str_replace("temp/", "", $image);
+	
 			$img->save("{$this->rootDir}/{$dir}/" .  $key . "_" . $image, IMAGETYPE_PNG, 5);
 		}
 
