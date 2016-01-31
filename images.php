@@ -40,18 +40,19 @@
 				}
 			}
 
-			$this->zipDirectory($this->rootDir);
-			$this->cleanUp($this->rootDir);
+			$directoryFullPath = getcwd() . "/downloads/$this->downloadDir";
+			
+			$this->zipDirectory($directoryFullPath);
+			$this->cleanUp($directoryFullPath);
 
-
-			return $this->rootDir;
+			return $this->downloadDir;
 		}
 
 		private function makeRootDirectory()
 		{
-			$rootDir = $this->generateRandomString(25);
+			$this->downloadDir = $this->generateRandomString(25);
 
-			$this->rootDir = getcwd() . "/downloads/" . $rootDir;
+			$this->rootDir = getcwd() . "/downloads/" . $this->downloadDir;
 
 			mkdir($this->rootDir);
 		}
@@ -79,7 +80,7 @@
 
 		private function zipDirectory($destination)
 		{
-			exec("zip -r 'downloads/$destination.zip' {$destination}");
+			exec("zip -r '$destination.zip' {$destination}");
 		}
 
 		private function cleanUp($destination)

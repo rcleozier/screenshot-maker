@@ -38,7 +38,7 @@
 
 <div class="row">
     <div class="column">
-		<a href="<?=BASE_URL?>/downloads/<?=$directory?>.zip" class="button"> Download </a>
+		<a href="<?=BASE_URL?>downloads/<?=$directory?>.zip" class="button"> Download </a>
 	</div>
 </div>
 
