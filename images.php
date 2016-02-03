@@ -40,7 +40,7 @@
 				}
 			}
 
-			$directoryFullPath = getcwd() . "/downloads/$this->downloadDir";
+			$directoryFullPath = __DIR__ . "/downloads/$this->downloadDir";
 			
 			$this->zipDirectory($directoryFullPath);
 			$this->cleanUp($directoryFullPath);
@@ -52,7 +52,7 @@
 		{
 			$this->downloadDir = $this->generateRandomString(25);
 
-			$this->rootDir = getcwd() . "/downloads/" . $this->downloadDir;
+			$this->rootDir = __DIR__ . "/downloads/" . $this->downloadDir;
 
 			mkdir($this->rootDir);
 		}
