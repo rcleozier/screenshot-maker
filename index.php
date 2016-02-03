@@ -36,12 +36,7 @@
 		  <li>2048 x 1536 (Landscape)</li>
 		</ul>
     </div>
-   <div class="column">
-    	<h4> Android </h4>
-    	<ul>
-		</ul>
-    </div>
-       <div class="column">
+    <div class="column">
     	<h4> Kindle </h4>
     	<ul>
 		  <li>800 x 480  </li>

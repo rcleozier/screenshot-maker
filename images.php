@@ -52,7 +52,7 @@
 		{
 			$this->downloadDir = $this->generateRandomString(25);
 
-			$this->rootDir = __DIR__ . "/downloads/" . $this->downloadDir;
+			$this->rootDir = "downloads/" . $this->downloadDir;
 
 			mkdir($this->rootDir);
 		}
