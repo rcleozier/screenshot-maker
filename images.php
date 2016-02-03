@@ -40,7 +40,7 @@
 				}
 			}
 
-			$directoryFullPath = __DIR__ . "/downloads/$this->downloadDir";
+			$directoryFullPath = "downloads/$this->downloadDir";
 			
 			$this->zipDirectory($directoryFullPath);
 			$this->cleanUp($directoryFullPath);
