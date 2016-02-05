@@ -18,7 +18,7 @@
 			<h1> App Screenshot Resizer</h1>
 			<h4> 
 				Upload your screenshots, we'll resize them to all the sizes below. Save time sizing screenshots for each App store.
-				<br/> The image is uploaded and the icons are generated automatically.
+				The image is uploaded and the icons are generated automatically.
 			</h4>
 		</div>
 	</div>
