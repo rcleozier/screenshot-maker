@@ -34,7 +34,7 @@
 			foreach($images as $image) {
 				foreach ($this->devices as $key => $value) {
 					$img = new ImageResize($image);
-					$img->resize($value[0], $value[1]);
+					$img->crop($value[0], $value[1], false);
 					$this->saveImage($img, $key, $image, $value[2]);
 					unset($img);
 				}
