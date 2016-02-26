@@ -16,7 +16,7 @@
 	<div class="row">
 		<div class="column">
 			<h1> App Screenshot Resizer</h1>
-			<h4> 
+			<h4>
 				Upload your screenshots, we'll resize them to all the sizes below. Save time sizing screenshots for each App store.
 				<br/> The image is uploaded and the icons are generated automatically.
 			</h4>
@@ -55,15 +55,24 @@
 	    </div>
 	  </div>
 	 <div class="row">
-	 	<div class="column column-75 column-offset-25">  
+	 	<div class="column column-75 column-offset-25">
 			<form action="submit.php" method="POST" enctype="multipart/form-data">
-			  Select images: <input type="file" name="images[]" multiple> <br/>
-			  <input type="submit">
+				Select images: <input type="file" name="images[]" multiple> <br/>
+				<input type="submit">
 			</form>
 		</div>
 	</div>
 	<div class="row">
-		<div class="column"> &copy; <?php echo date("Y") ?> AppScreenshotSize.com </div> 
+		<div class="column"> &copy; <?php echo date("Y") ?> AppScreenshotSize.com </div>
 	</div>
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-18545304-10', 'appscreenshotsize.com');
+	ga('send', 'pageview');
+	</script>")
 	</body>
 </html>
